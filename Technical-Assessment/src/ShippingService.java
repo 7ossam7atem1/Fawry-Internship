@@ -1,6 +1,12 @@
 import java.util.List;
 
 public class ShippingService {
+    public interface ShippingsInterface {
+        String getName();
+
+        double getWeight();
+    }
+
     public static double calculateFees(List<ShippingsInterface> shippableProducts) {
 
         double totalWeightInGrams = shippableProducts.stream()

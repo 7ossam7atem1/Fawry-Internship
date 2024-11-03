@@ -1,4 +1,4 @@
-public class ShippableProducts extends Product implements ShippingsInterface {
+public class ShippableProducts extends Product implements ShippingService.ShippingsInterface {
     private double weight;
 
     public ShippableProducts(String name, double price, int quantity, double weight) {

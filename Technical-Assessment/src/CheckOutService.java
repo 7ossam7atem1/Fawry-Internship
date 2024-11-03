@@ -5,10 +5,10 @@ public class CheckOutService {
     public static void checkout(Customer customer, Cart cart) throws Exception {
         if (cart.isEmpty()) throw new Exception("Cart is empty");
         double subTotal = cart.calculateSubtotal();
-        List<ShippingsInterface> shippableItems = new ArrayList<>();
+        List<ShippingService.ShippingsInterface> shippableItems = new ArrayList<>();
         for (CartItem item : cart.getItems()) {
-            if (item.getProduct() instanceof ShippingsInterface) {
-                shippableItems.add((ShippingsInterface) item.getProduct());
+            if (item.getProduct() instanceof ShippingService.ShippingsInterface) {
+                shippableItems.add((ShippingService.ShippingsInterface) item.getProduct());
 
             }
         }

@@ -6,7 +6,7 @@ public class Main {
             Product cheese = new ExpirableProducts("cheese", 100, 5, false);
             Product biscuits = new ExpirableProducts("biscuits", 150, 2, false);
             Product tv = new ShippableProducts("TV", 500, 1, 5000);
-            Product chair = new ShippableProducts("Chair C120" , 2250 , 1 , 2500);
+            Product chair = new ShippableProducts("Chair C120", 2250, 1, 2500);
             Product scratchCard = new NotExpiredProducts("Scratch Card", 50, 10);
             Customer customer = new Customer(5000);
 
