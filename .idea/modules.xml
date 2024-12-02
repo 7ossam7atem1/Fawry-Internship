@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Technical-Assessment/Fawry-SWE-Internship/Fawry-SWE-Internship.iml" filepath="$PROJECT_DIR$/Technical-Assessment/Fawry-SWE-Internship/Fawry-SWE-Internship.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Fawry-intern.iml" filepath="$PROJECT_DIR$/.idea/Fawry-intern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Onsite-Interview/Onsite-Interview.iml" filepath="$PROJECT_DIR$/Onsite-Interview/Onsite-Interview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Technical-Assessment/Technical-Assessment.iml" filepath="$PROJECT_DIR$/Technical-Assessment/Technical-Assessment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Technical-Interview-Onsite/Technical-Interview.iml" filepath="$PROJECT_DIR$/Technical-Interview-Onsite/Technical-Interview.iml" />
+    </modules>
+  </component>
+</project>

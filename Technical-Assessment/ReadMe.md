@@ -96,21 +96,21 @@ Your Current balance: 1775.0
 
 This system includes the following error handling scenarios:
 
-1. **Insufficient Product Quantity**: 
-   - If a customer tries to add a product to the cart in a quantity exceeding what is available in stock, the system throws an error.
-   - Example error: `"Insufficient quantity for the product cheese"`
+1. **Insufficient Product Quantity**:
+    - If a customer tries to add a product to the cart in a quantity exceeding what is available in stock, the system throws an error.
+    - Example error: `"Insufficient quantity for the product cheese"`
 
-2. **Expired Products**: 
-   - If a customer attempts to add an expired product to the cart, the system prevents the addition and throws an error.
-   - Example error: `"cheese is expired"`
+2. **Expired Products**:
+    - If a customer attempts to add an expired product to the cart, the system prevents the addition and throws an error.
+    - Example error: `"cheese is expired"`
 
-3. **Insufficient Customer Balance**: 
-   - During checkout, if the customer's balance is insufficient to cover the total amount (subtotal + shipping fees), the system throws an error.
-   - Example error: `"Insufficient balance"`
+3. **Insufficient Customer Balance**:
+    - During checkout, if the customer's balance is insufficient to cover the total amount (subtotal + shipping fees), the system throws an error.
+    - Example error: `"Insufficient balance"`
 
-4. **Empty Cart**: 
-   - Trying to checkout when the cart is empty results in an error.
-   - Example error: `"Cart is empty"`
+4. **Empty Cart**:
+    - Trying to checkout when the cart is empty results in an error.
+    - Example error: `"Cart is empty"`
 
 These checks ensure that the system is robust and handles typical errors gracefully, providing informative feedback to the user.
 
@@ -129,7 +129,7 @@ To set up and run this project locally, follow these steps:
    -Open the project in a Java-compatible IDE (e.g., IntelliJ IDEA, Eclipse) to easily edit, build, and run the code.
 
 3. **Compile and Run**:
-- Ensure Java 8 or higher is installed on your machine. You can verify the installation by running: 
+- Ensure Java 8 or higher is installed on your machine. You can verify the installation by running:
  ```bash
  Java --version
   ``` 
