@@ -1,0 +1,13 @@
+<div class="product-details" *ngIf="!loading; else loadingTemplate">
+    <h1>{{ product.title }}</h1>
+    <img [src]="product.image" [alt]="product.title" class="product-image" />
+    <p><strong>Category:</strong> {{ product.category | titlecase }}</p>
+    <p><strong>Price:</strong> ${{ product.price }}</p>
+    <p>{{ product.description }}</p>
+    <p-button label="Back to Home" icon="pi pi-arrow-left" (onClick)="goBack()"></p-button>
+  </div>
+  
+  <ng-template #loadingTemplate>
+    <p>Loading product details...</p>
+  </ng-template>
+  

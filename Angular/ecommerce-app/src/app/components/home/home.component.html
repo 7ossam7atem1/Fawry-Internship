@@ -1,0 +1,72 @@
+<div class="container">
+  <p-toast></p-toast>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul class="navbar-list">
+      <li class="navbar-item">
+        <a routerLink="/home">Home</a>
+      </li>
+      <li class="navbar-item">
+        <a routerLink="/about">About Us</a>
+      </li>
+      <li class="navbar-item">
+        <a routerLink="/contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="header">
+    <h1>Welcome to Our Store</h1>
+
+    <div class="search-section">
+      <span class="p-input-icon-left">
+        <i class="pi pi-search"></i>
+        <input
+          type="text"
+          pInputText
+          [formControl]="searchControl"
+          placeholder="Search products..."
+          class="search-input"
+        />
+      </span>
+
+      <p-button
+        label="Sign out"
+        icon="pi pi-sign-out"
+        (onClick)="logOut()"
+        severity="danger"
+      ></p-button>
+    </div>
+  </div>
+
+  <div class="products-grid">
+    <p-card
+      *ngFor="let product of filteredProducts"
+      [header]="product.title"
+      styleClass="product-card"
+      (click)="viewDetails(product.id)"
+    >
+      <ng-template pTemplate="header">
+        <img [src]="product.image" [alt]="product.title" class="product-image" />
+      </ng-template>
+
+      <div class="product-category">
+        {{ product.category | titlecase }}
+      </div>
+
+      <p class="product-description">
+        {{ product.description | slice: 0:100 }}...
+      </p>
+
+      <div class="product-footer">
+        <span class="product-price">${{ product.price }}</span>
+        <p-button
+          label="Add to Cart"
+          icon="pi pi-shopping-cart"
+          severity="success"
+        ></p-button>
+      </div>
+    </p-card>
+  </div>
+</div>
