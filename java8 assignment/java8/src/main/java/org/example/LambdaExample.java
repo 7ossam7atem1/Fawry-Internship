@@ -8,6 +8,7 @@ import java.util.stream.Stream;
 
 public class LambdaExample {
 
+
     public static void main(final String[] args) {
 
         final UsersRepository repository = new UsersRepository();
